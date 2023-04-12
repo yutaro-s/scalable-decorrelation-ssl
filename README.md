@@ -5,7 +5,7 @@ Yutaro Shigeto*, Masashi Shimbo*, Yuya Yoshikawa, Akikazu Takeuchi.
 Learning Decorrelated Representations Efficiently Using Fast Fourier Transform. 
 CVPR 2023. To appear.
 
-* Equal contribution.
+\* Equal contribution.
 
 [arXiv](https://arxiv.org/abs/2301.01569)
 

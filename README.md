@@ -6,7 +6,7 @@ This is the official implementation of the following paper:
 >Yutaro Shigeto\*, Masashi Shimbo\*, Yuya Yoshikawa, Akikazu Takeuchi. 
 Learning Decorrelated Representations Efficiently Using Fast Fourier Transform. 
 CVPR 2023.
-
+>
 >\* Equal contribution.
 
 [ [arXiv](https://arxiv.org/abs/2301.01569) | [CVF](https://openaccess.thecvf.com/content/CVPR2023/html/Shigeto_Learning_Decorrelated_Representations_Efficiently_Using_Fast_Fourier_Transform_CVPR_2023_paper.html) | [Short presentation (YouTube)](https://youtu.be/ngPiU13Fg0M) ]

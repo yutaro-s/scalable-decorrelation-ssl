@@ -74,3 +74,5 @@ If you use this code, please cite our paper:
 ## Acknowledgments
 
 This repository is built using [solo-learn](https://github.com/vturrisi/solo-learn). I would like to express my gratitude to the authors of solo-learn.
+
+This work is based on results obtained from Project JPNP20006, commissioned by the New Energy and Industrial Technology Development Organization (NEDO).

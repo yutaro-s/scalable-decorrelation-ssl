@@ -1,4 +1,5 @@
 # Copyright 2021 solo-learn development team.
+# Copyright 2023 Yutaro Shigeto.
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
@@ -18,6 +19,7 @@
 # DEALINGS IN THE SOFTWARE.
 
 import sys
+
 sys.setrecursionlimit(10000)
 
 import os
@@ -48,7 +50,9 @@ else:
 
 
 from solo.utils.checkpointer import Checkpointer
-from solo.utils.classification_dataloader import prepare_data as prepare_data_classification
+from solo.utils.classification_dataloader import (
+    prepare_data as prepare_data_classification,
+)
 from solo.utils.misc import make_contiguous
 from solo.utils.pretrain_dataloader import (
     prepare_dataloader,
@@ -88,7 +92,9 @@ def main():
 
     # pretrain dataloader
     if args.dali:
-        assert _dali_avaliable, "Dali is not avaiable, please install it first with [dali]."
+        assert (
+            _dali_avaliable
+        ), "Dali is not avaiable, please install it first with [dali]."
 
         dali_datamodule = PretrainDALIDataModule(
             dataset=args.dataset,

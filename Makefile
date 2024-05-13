@@ -33,7 +33,7 @@ docker-build:
 	cd docker && docker build -t ${DOCKER_IMAGE} .
 
 docker-run:
-	docker run --gpus all -it --rm --shm-size 100G -e WANDB_API_KEY -v $(PWD):/workspace -w /workspace $(DOCKER_IMAGE)
+	docker run --gpus all -it --rm --shm-size 100G -e WANDB_API_KEY -e WANDB_ENTITY -v $(PWD):/workspace -w /workspace $(DOCKER_IMAGE)
 
 #####################################
 

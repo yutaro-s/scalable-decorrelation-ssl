@@ -20,20 +20,26 @@ CVPR 2023.
     git clone --recurse-submodules https://github.com/yutaro-s/scalable-decorrelation-ssl.git
     ```
 
-2. Build a Docker image
+2. Add some files to the solo-learn repository
+
+    ```
+    make solo-main
+    ```
+
+3. Build a Docker image
 
     ```
     make docker-build
     ```
 
-3. Set your API key and username if you intend to use [W&B](https://wandb.ai/)
+4. Set your API key and username if you intend to use [W&B](https://wandb.ai/)
 
     ```
     export WANDB_API_KEY=[API key]
     export WANDB_ENTITY=[username]
     ```
 
-4. Launch a Docker container
+5. Launch a Docker container
 
     ```
     make docker-run
@@ -41,17 +47,17 @@ CVPR 2023.
 
 
 ## Training and Evaluation
-
+project 
 1. Self-supervised learning on ImageNet
 
     ```
-    WANDB_PROJECT=[projetc name] bash script/in1k-r50-d8192/pretrain/sbarlow.sh
+    WANDB_PROJECT=[project name] bash script/in1k-r50-d8192/pretrain/sbarlow.sh
     ```
 
 2. Linear evaluation on ImageNet
 
     ```
-    WANDB_PROJECT=[projetc name] bash ./script/in1k-r50-d8192/linear/sbarlow.sh [path to the checkpoint]
+    WANDB_PROJECT=[project name] bash ./script/in1k-r50-d8192/linear/sbarlow.sh [path to the checkpoint]
     ```
 
 
